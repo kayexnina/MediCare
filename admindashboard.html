@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="udadmindashboard.css".css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Medicare Admin 
+    </title>
+    <link rel="shortcut icon" href="/images/logo-mb.png" type="image/png">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- FULLCALENDAR CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css"     integrity="sha384-6ziY43JdxB8Nw8+F8eAao4vYHmuL2Fc/vxXrqlvShMQuoW1HqI3bBhFuLq4HyD3i" crossorigin="anonymous">
+
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> MEDICARE</a>
+        <nav class="navbar">
+          <div class="sidebar-close" id="sidebar-close">
+            <i class='bx bx-left-arrow-alt'></i>
+          </div>
+      </div>
+      <div class="sidebar-user">
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name">
+            anh tuat
+          </div>
+        </div>
+        <button class="btn btn-outline">
+          <i class='bx bx-log-out bx-flip-horizontal'></i>
+        </button>
+      </div>
+
+      <!-- SIDEBAR MENU -->
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#dashboard" id="dashboard" onclick="location.href='adminp.html'" class="active">
+            <i class='bx bx-home'></i>
+            <span>dashboard</span>
+          </a>
+        </li>
+        <li class="sidebar-submenu">
+          <a href="#" class="sidebar-menu-dropdown">
+            <i class='bx bx-user-circle'></i>
+            <span>account</span>
+            <div class="dropdown-icon"></div>
+          </a>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#">
+                edit profile
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                account settings
+              </a>
+            </li>
+          </ul>
+        </li>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#">
+                list
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                add project
+              </a>
+            </li>
+          </ul>
+        </li>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#">
+                list product
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" id="calendar-link" onclick="location.href='adminc.html'">
+            <i class='bx bx-calendar'></i>
+            <span>calendar</span>
+          </a>
+        </li>
+          </a>
+        </li>
+        <li class="sidebar-submenu">
+          <a href="#" class="sidebar-menu-dropdown">
+            <i class='bx bx-cog'></i>
+            <span>settings</span>
+            <div class="dropdown-icon"></div>
+          </a>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                darkmode
+                <span class="darkmode-switch"></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- END SIDEBAR MENU -->
+    </div>
+
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <div class="main-header">
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class='bx bx-menu-alt-right'></i>
+        </div>
+        <div class="main-title">
+          dashboard
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="row">
+          <div class="col-12">
+            <div class="box box-hover">
+                      <!-- DOCTORS TABLE -->
+          <div class="col-12">
+            <div class="box">
+              <div class="box-header">
+                Our Doctors
+              </div>
+              <div class="box-body overflow-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Doctor</th>
+                      <th>Admission Date</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#2345</td>
+                      <td>
+                        <div class="order-owner">
+                          <span>tuat tran anh</span>
+                        </div>
+                      </td>
+                      <td>2021-05-09</td>
+                      <td>
+                        <span class="order-status user-confirmed">
+                          Confirmed </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>#2345</td>
+                      <td>
+                        <div class="order-owner">
+                          <span>John doe</span>
+                        </div>
+                      </td>
+                      <td>2021-05-09</td>
+                      <td>
+                        <span class="order-status user-confirmed">
+                          Confirmed </span>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>#2345</td>
+                      <td>
+                        <div class="order-owner">
+                          <span>evelyn</span>
+                        </div>
+                      </td>
+                      <td>2021-05-09</td>
+                      <td>
+                        <span class="order-status user-pending">
+                          Pending
+                        </span>
+                        </span>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>#2345</td>
+                      <td>
+                        <div class="order-owner">
+                          <span>John doe</span>
+                        </div>
+                      </td>
+                      <td>2021-05-09</td>
+                      <td>
+                        <span class="order-status user-pending">
+                          Pending
+                        </span>
+                      </td>
+                      <td>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>#2345</td>
+                <td>
+                  <div class="order-owner">
+                    <span>evelyn</span>
+                  </div>
+                </td>
+                <td>2021-05-09</td>
+                <td>
+                  <span class="order-status user-cancelled">
+                    Cancelled
+                  </span>
+                </td>
+                <td>
+                </td>
+              </tr>
+              </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="box">
+              <div class="box-header">
+                Patient Activity
+              </div>
+              <div class="box-body overflow-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Patient</th>
+                      <th>Admission Date</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>#2345</td>
+                    <td>
+                      <div class="order-owner">
+                        <span>tuat tran anh</span>
+                      </div>
+                    </td>
+                    <td>2021-05-09</td>
+                    <td>
+                      <span class="order-status user-confirmed">
+                        Confirmed </span>
+                    </td>
+                  <tr>
+                        Confirmed </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#2345</td>
+                    <td>
+                      <div class="order-owner">
+                        <span>John doe</span>
+                      </div>
+                    </td>
+                    <td>2021-05-09</td>
+                    <td>
+                      <span class="order-status user-confirmed">
+                        Confirmed </span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#2345</td>
+                    <td>
+                      <div class="order-owner">
+                        <span>evelyn</span>
+                      </div>
+                    </td>
+                    <td>2021-05-09</td>
+                    <td>
+                      <span class="order-status user-pending">
+                        Pending
+                      </span>
+                      </span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#2345</td>
+                    <td>
+                      <div class="order-owner">
+                        <span>John doe</span>
+                      </div>
+                    </td>
+                    <td>2021-05-09</td>
+                    <td>
+                      <span class="order-status user-pending">
+                        Pending
+                      </span>
+                    </td>
+                    <td>
+            </div>
+            </td>
+            </tr>
+            <tr>
+              <td>#2345</td>
+              <td>
+                <div class="order-owner">
+                  <span>evelyn</span>
+                </div>
+              </td>
+              <td>2021-05-09</td>
+              <td>
+                <span class="order-status user-cancelled">
+                  Cancelled
+                </span>
+              </td>
+              <td>
+              </td>
+            </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>          <!-- END ORDERS TABLE -->
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+    <!--CALENDAR CONENT-->
+
+    <!-- SCRIPT -->
+
+    <!-- APEX CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <!-- APP JS -->
+    <script src="./js/app.js"></script>
+    <script>
+      document.querySelectorAll('.sidebar-submenu').forEach(e => {
+  e.querySelector('.sidebar-menu-dropdown').onclick = (event) => {
+      event.preventDefault()
+      e.querySelector('.sidebar-menu-dropdown .dropdown-icon').classList.toggle('active')
+
+      let dropdown_content = e.querySelector('.sidebar-menu-dropdown-content')
+      let dropdown_content_lis = dropdown_content.querySelectorAll('li')
+
+      let active_height = dropdown_content_lis[0].clientHeight * dropdown_content_lis.length
+
+      dropdown_content.classList.toggle('active')
+
+      dropdown_content.style.height = dropdown_content.classList.contains('active') ? active_height + 'px' : '0'
+  }
+})
+
+let category_options = {
+  series: [44, 55, 41, 17],
+  labels: ['Cloths', 'Devices', 'Bags', 'Watches'],
+  chart: {
+      type: 'donut',
+  },
+  colors: ['#6ab04c', '#2980b9', '#f39c12', '#d35400']
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    mobileToggle.addEventListener('click', function () {
+        sidebar.classList.toggle('active');
+    });
+});
+
+    </script>
+  </body>
+</html>

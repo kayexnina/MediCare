@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Medicare Admin 
+    </title>
+    <link rel="stylesheet" href="udadminalendar.css">
+    <link rel="shortcut icon" href="/images/logo-mb.png" type="image/png">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- FULLCALENDAR CSS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+
+    <!-- FULLCALENDAR JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="udadmin.css">
+    <link rel="stylesheet" href="udadmingrid.css">
+  </head>
+  <body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> MEDICARE</a>
+        <nav class="navbar">
+          <div class="sidebar-close" id="sidebar-close">
+            <i class='bx bx-left-arrow-alt'></i>
+          </div>
+      </div>
+      <div class="sidebar-user">
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name">
+            anh tuat
+          </div>
+        </div>
+        <button class="btn btn-outline">
+          <i class='bx bx-log-out bx-flip-horizontal'></i>
+        </button>
+      </div>
+
+      <!-- SIDEBAR MENU -->
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#dashboard" id="dashboard" onclick="location.href='admindashboard.html'">
+            <i class='bx bx-home'></i>
+            <span>dashboard</span>
+          </a>
+          </a>
+        </li>
+        <li class="sidebar-submenu">
+          <a href="#" class="sidebar-menu-dropdown">
+            <i class='bx bx-user-circle'></i>
+            <span>account</span>
+            <div class="dropdown-icon"></div>
+          </a>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#">
+                edit profile
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                account settings
+              </a>
+            </li>
+          </ul>
+        </li>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#">
+                list
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                add project
+              </a>
+            </li>
+          </ul>
+        </li>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#">
+                list product
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <li class="sidebar-menu">
+            <a href="#" id="calendar-link" onclick="location.href='adminc.html'" class="active">
+            <i class='bx bx-calendar'></i>
+            <span>calendar</span>
+          </a>
+        </li>
+          </a>
+        </li>
+        <li class="sidebar-submenu">
+          <a href="#" class="sidebar-menu-dropdown">
+            <i class='bx bx-cog'></i>
+            <span>settings</span>
+            <div class="dropdown-icon"></div>
+          </a>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                darkmode
+                <span class="darkmode-switch"></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- END SIDEBAR MENU -->
+    </div>
+
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="calendar-container">
+      <div id="calendar">
+  </div>
+               </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+    <!--CALENDAR CONENT-->
+
+    <!-- SCRIPT -->
+
+    <!-- APEX CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="udadmin.js"></script>
+
+    <!-- APP JS -->
+    
+  </body>
+</html>
